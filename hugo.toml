@@ -1,4 +1,52 @@
-baseURL = ''
+baseURL = 'https://evilcat-games.github.io/evilcat.games/'
 languageCode = 'en-us'
-title = 'Evil Cat'
+title = ''
 theme = "coder"
+
+[params]
+author = "Evil Cat"
+description = "Evil Cat Games"
+keywords = "evil,cat,games"
+avatarURL = "images/evilcat.png"
+dateFormat = "January 2, 2006"
+since = 2025
+colorScheme = "light"
+hideColorSchemeToggle = true
+# Custom CSS
+customCSS = []
+# Custom SCSS, file path is relative to Hugo's asset folder (default: {your project root}/assets)
+customSCSS = []
+# Custom JS
+customJS = []
+# Custom remote JS files
+customRemoteJS = []
+
+[taxonomies]
+category = "categories"
+series = "series"
+tag = "tags"
+author = "authors"
+
+[[params.social]]
+name = "Email"
+icon = "fa-solid fa-envelope"
+weight = 1
+url = "mailto:contact@evilcat.games"
+
+[languages.en]
+languageName = ":uk:"
+
+[[languages.en.menu.main]]
+name = "About"
+weight = 1
+url = "/"
+
+[[languages.en.menu.main]]
+name = "Terms"
+weight = 2
+url = "legal/terms"
+
+[[languages.en.menu.main]]
+name = "Privacy"
+weight = 3
+url = "legal/privacy"
