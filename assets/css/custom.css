@@ -2,3 +2,30 @@
 	width: 256px;
 	height: auto;
 }
+
+.game-badge-text {
+	display: flex;
+	justify-content: center;
+	margin: 1.5rem 0;
+	font-size: 1.2rem;
+	font-weight: bold;
+  }
+  
+.game-badge-text a {
+	text-decoration: none;
+	color: #000000;
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+	transition: color 0.2s ease;
+}
+  
+.game-badge-text a:hover {
+	color: #333333;
+}
+  
+.play-icon {
+	display: inline-block;
+	font-size: 1.4rem;
+	transform: translateY(1px);
+}
