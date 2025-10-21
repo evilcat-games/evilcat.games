@@ -13,7 +13,7 @@ since = 2025
 colorScheme = "light"
 hideColorSchemeToggle = true
 # Custom CSS
-customCSS = []
+customCSS = ["css/custom.css"]
 # Custom SCSS, file path is relative to Hugo's asset folder (default: {your project root}/assets)
 customSCSS = []
 # Custom JS
@@ -29,7 +29,7 @@ author = "authors"
 
 [[params.social]]
 name = "Email"
-icon = "fa-solid fa-envelope"
+icon = "fa-solid fa-envelope fa-2x"
 weight = 1
 url = "mailto:contact@evilcat.games"
 
