@@ -24,12 +24,17 @@ hugo --minify                             # production build into ./public
 
 ## Layout
 
-- `hugo.toml` — site config, menu, social links, custom CSS list.
+- `hugo.toml` — site config, menu, custom CSS list and home page content:
+  `params.games` (one `[[params.games]]` block per game), `params.about`,
+  `params.contactEmail`.
 - `layouts/_partials/` — overrides of theme partials (home page, footer).
-  `home.html` composes `home/avatar`, `home/gamebadge`, `home/social`.
+  `home.html` composes `home/avatar`, `home/games`, `home/studio` (About),
+  `home/contact`; `home/section-title` renders a section heading.
 - `assets/css/custom.css` — all custom styles (loaded via `params.customCSS`).
+  The theme uses `1rem = 10px`.
+- `assets/images/games/` — game icons; Hugo resizes them to WebP/PNG at build time.
 - `content/legal/` — Privacy Policy and Terms & Conditions for the Guess Word app.
-- `static/images/` — images served as-is.
+- `static/images/` — images served as-is; store badges are in `static/images/badges/`.
 
 ## Rules
 
@@ -44,3 +49,6 @@ hugo --minify                             # production build into ./public
 - Pushing to `main` deploys to production. Build locally with `hugo` and check
   for errors before proposing a push.
 - Keep the site dependency-free: no npm packages or external JS without a reason.
+- Do not modify store badge artwork (colours, proportions, elements) and keep
+  clear space around a badge of at least 1/4 of its height.
+- Serve images, fonts and badges from this repository, not from third-party hosts.
