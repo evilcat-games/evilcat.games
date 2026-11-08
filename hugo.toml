@@ -1,4 +1,4 @@
-baseURL = 'https://evilcat-games.github.io/evilcat.games/'
+baseURL = 'https://evilcat.games/'
 languageCode = 'en-us'
 title = ''
 theme = "coder"
