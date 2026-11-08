@@ -39,6 +39,8 @@ hugo --minify                             # production build into ./public
   link to them. Change legal texts only when explicitly asked.
 - `public/` and `resources/_gen/` are build output; never commit them.
 - Do not change the deploy workflow, `baseURL` or domain setup unless asked.
+- GitHub Actions in workflows are pinned by full commit SHA with the version
+  in a comment. Keep it that way when updating them.
 - Pushing to `main` deploys to production. Build locally with `hugo` and check
   for errors before proposing a push.
 - Keep the site dependency-free: no npm packages or external JS without a reason.
