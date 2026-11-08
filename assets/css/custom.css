@@ -39,15 +39,15 @@
 
 .game-icon img {
 	display: block;
-	width: 18rem;
-	height: 18rem;
+	width: 12.6rem;
+	height: 12.6rem;
 	border-radius: 22%;
-	box-shadow: 0 0.4rem 1.6rem rgba(0, 0, 0, 0.15);
+	box-shadow: 0 0.3rem 1.1rem rgba(0, 0, 0, 0.15);
 }
 
 .centered .about .game-name {
-	margin: 2rem 0 0.4rem;
-	font-size: 3.2rem;
+	margin: 1.4rem 0 0.3rem;
+	font-size: 2.2rem;
 	font-weight: 800;
 	line-height: 1.2;
 	letter-spacing: 0.05em;
@@ -56,14 +56,14 @@
 
 .game-tagline {
 	margin: 0;
-	font-size: 2rem;
+	font-size: 1.4rem;
 	color: #555;
 }
 
 /* Clear space around the badge must be at least 1/4 of its height */
 .store-badge {
 	display: inline-block;
-	margin: 1.5rem;
+	margin: 1.1rem;
 	transition: opacity 0.2s ease;
 }
 
@@ -75,7 +75,7 @@
 .store-badge img {
 	display: block;
 	width: auto;
-	height: 6rem;
+	height: 4.2rem;
 }
 
 /* About and contact */
@@ -108,7 +108,4 @@
 		height: 15rem;
 	}
 
-	.store-badge img {
-		height: 5.6rem;
-	}
 }

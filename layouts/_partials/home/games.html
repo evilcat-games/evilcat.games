@@ -9,7 +9,7 @@
       <a class="game-icon" href="{{ $game.googlePlay }}" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">
         <picture>
           <source srcset="{{ $webp.RelPermalink }}" type="image/webp">
-          <img src="{{ $png.RelPermalink }}" alt="" width="180" height="180">
+          <img src="{{ $png.RelPermalink }}" alt="" width="126" height="126">
         </picture>
       </a>
     {{ end }}
@@ -17,7 +17,7 @@
     {{ with $game.tagline }}<p class="game-tagline">{{ . }}</p>{{ end }}
     {{ with $game.googlePlay }}
     <a class="store-badge" href="{{ . }}" target="_blank" rel="noopener">
-      <img src="{{ "images/badges/google-play-en.svg" | relURL }}" alt="Get {{ $game.name }} on Google Play" width="203" height="60">
+      <img src="{{ "images/badges/google-play-en.svg" | relURL }}" alt="Get {{ $game.name }} on Google Play" width="142" height="42">
     </a>
     {{ end }}
   </div>
