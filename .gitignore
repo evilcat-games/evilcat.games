@@ -1,3 +1,6 @@
 *.DS_Store
 resources/_gen
 public
+.hugo_build.lock
+CLAUDE.local.md
+.claude/settings.local.json
