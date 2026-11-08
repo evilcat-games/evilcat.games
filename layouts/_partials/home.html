@@ -1,8 +1,9 @@
 <section class="container centered">
   <div class="about">
     {{ partialCached "home/avatar.html" . }}
-    {{ partialCached "home/gamebadge.html" . }}
-    {{ partialCached "home/social.html" . }}
+    {{ partial "home/games.html" . }}
+    {{ partial "home/studio.html" . }}
+    {{ partial "home/contact.html" . }}
   </div>
 
   {{ partialCached "home/extensions.html" . }}

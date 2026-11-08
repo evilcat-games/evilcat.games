@@ -1,31 +1,114 @@
+/* Theme base: 1rem = 10px */
+
+/* The logo file has wide empty margins: crop it to the centre square */
 .avatar img {
-	width: 256px;
-	height: auto;
+	width: 18rem;
+	height: 18rem;
+	object-fit: cover;
+	border-radius: 0;
 }
 
-.game-badge-text {
-	display: flex;
-	justify-content: center;
-	margin: 1.5rem 0;
-	font-size: 1.2rem;
-	font-weight: bold;
-  }
-  
-.game-badge-text a {
-	text-decoration: none;
-	color: #000000;
+/* Section title with lines on both sides.
+   `.centered .about` prefix is needed to beat the theme's `.centered .about h2`. */
+.centered .about .section-title {
 	display: flex;
 	align-items: center;
-	gap: 0.5rem;
-	transition: color 0.2s ease;
-}
-  
-.game-badge-text a:hover {
-	color: #333333;
-}
-  
-.play-icon {
-	display: inline-block;
+	gap: 2rem;
+	max-width: 60rem;
+	margin: 4rem auto 2rem;
 	font-size: 1.4rem;
-	transform: translateY(1px);
+	font-weight: 700;
+	line-height: 1;
+	letter-spacing: 0.3em;
+	text-transform: uppercase;
+	color: #212121;
+}
+
+.centered .about .section-title::before,
+.centered .about .section-title::after {
+	content: "";
+	flex: 1;
+	height: 1px;
+	background: #ccc;
+}
+
+/* Games */
+.game-icon {
+	display: inline-block;
+}
+
+.game-icon img {
+	display: block;
+	width: 18rem;
+	height: 18rem;
+	border-radius: 22%;
+	box-shadow: 0 0.4rem 1.6rem rgba(0, 0, 0, 0.15);
+}
+
+.centered .about .game-name {
+	margin: 2rem 0 0.4rem;
+	font-size: 3.2rem;
+	font-weight: 800;
+	line-height: 1.2;
+	letter-spacing: 0.05em;
+	text-transform: uppercase;
+}
+
+.game-tagline {
+	margin: 0;
+	font-size: 2rem;
+	color: #555;
+}
+
+/* Clear space around the badge must be at least 1/4 of its height */
+.store-badge {
+	display: inline-block;
+	margin: 1.5rem;
+	transition: opacity 0.2s ease;
+}
+
+.store-badge:hover,
+.store-badge:focus-visible {
+	opacity: 0.85;
+}
+
+.store-badge img {
+	display: block;
+	width: auto;
+	height: 6rem;
+}
+
+/* About and contact */
+.studio p {
+	margin: 0;
+	font-size: 2rem;
+	line-height: 1.5;
+}
+
+.contact a {
+	display: inline-flex;
+	align-items: center;
+	gap: 1.2rem;
+	font-size: 2rem;
+	color: #212121;
+	text-decoration: none;
+}
+
+.contact a:hover span {
+	text-decoration: underline;
+}
+
+.contact i {
+	font-size: 2.4rem;
+}
+
+@media only screen and (max-width: 768px) {
+	.avatar img {
+		width: 15rem;
+		height: 15rem;
+	}
+
+	.store-badge img {
+		height: 5.6rem;
+	}
 }

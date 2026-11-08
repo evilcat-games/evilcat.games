@@ -20,18 +20,21 @@ customSCSS = []
 customJS = []
 # Custom remote JS files
 customRemoteJS = []
+# Home page content
+about = ["Small games made with care.", "More games are coming."]
+contactEmail = "contact@evilcat.games"
+
+[[params.games]]
+name = "Guess Word"
+tagline = "A relaxing word puzzle"
+icon = "images/games/guessword.png" # path inside assets/
+googlePlay = "https://play.google.com/store/apps/details?id=com.evilcat.guessword"
 
 [taxonomies]
 category = "categories"
 series = "series"
 tag = "tags"
 author = "authors"
-
-[[params.social]]
-name = "Email"
-icon = "fa-solid fa-envelope fa-2x"
-weight = 1
-url = "mailto:contact@evilcat.games"
 
 [languages.en]
 languageName = ":uk:"

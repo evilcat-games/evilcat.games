@@ -1,0 +1,6 @@
+{{ with site.Params.about }}
+<section class="studio">
+  {{ partial "home/section-title.html" "About" }}
+  <p>{{ range $i, $line := . }}{{ if $i }}<br>{{ end }}{{ $line }}{{ end }}</p>
+</section>
+{{ end }}
